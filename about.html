@@ -1,0 +1,663 @@
+KamikazeCombat
+#3465
+
+KamikazeCombat — 11/22/2021
+number 10:
+SELECT trip_data.bike_number, trip_data.start_date, trip_data.end_date, bikeshare_stations.station_id, bikeshare_stations.name
+FROM trip_data JOIN bikeshare_stations
+WHERE trip_data.start_station = bikeshare_stations.station_id AND station_id = 31101 
+
+Limit 5
+KamikazeCombat — 11/22/2021
+number 7:
+SELECT trip_data.bike_number, trip_data.duration, bikeshare_stations.name
+FROM trip_data JOIN bikeshare_stations
+ON trip_data.start_station = bikeshare_stations.station_id
+WHERE trip_data.duration > 85000
+lexifogel — 11/30/2021
+Hi Nik, 
+
+I wasn’t able to make it to lecture this Monday because I was sick, but I heard from a friend that we went over the IAs’ old projects and that they offered to share their GitHub repositories so we could use their old code to help us develop our own. Do you think you could send me yours? My group is a little lost without a starter code file and I think it would be really beneficial to see what files you have and how you organized the functions within them. Thank you!
+lexifogel — 12/01/2021
+https://github.com/syamiller/SI206-Final
+GitHub
+GitHub - syamiller/SI206-Final
+Contribute to syamiller/SI206-Final development by creating an account on GitHub.
+
+lexifogel — 12/01/2021
+https://github.com/lexifogel/final-project-206/invitations
+lexifogel — 12/01/2021
+import matplotlib.pyplot as plt
+import sqlite3
+import unittest
+import os
+
+# Your name: Lexi Fogel
+Expand
+HW8.py
+9 KB
+** have to replace "next" with "sorted_data"
+KamikazeCombat — 12/05/2021
+https://github.com/catris25/myspotify-top100-2020/blob/master/my%20spotify%20top%20100.ipynb
+GitHub
+myspotify-top100-2020/my spotify top 100.ipynb at master · catris25...
+Contribute to catris25/myspotify-top100-2020 development by creating an account on GitHub.
+
+KamikazeCombat — 12/10/2021
+API_KEY = 'AVZ3LBV0IE91JH6J'
+secrets.py
+1 KB
+import secrets
+import requests
+import json
+import pprint
+import sys
+import os
+Expand
+CoinMarketCap.py
+2 KB
+lexifogel — 12/11/2021
+'x-rapidapi-key': "1171c32ff6f6859a7044ec64ce2d1de3",
+    'x-rapidapi-host': "api-football-v1.p.rapidapi.com"
+    }
+headers = {
+    'x-rapidapi-key': "1171c32ff6f6859a7044ec64ce2d1de3",
+    'x-rapidapi-host': "api-football-v1.p.rapidapi.com"
+    }
+https://www.api-football.com/documentation-v3#section/Introduction
+api-football
+API-Football - Documentation
+All the documentation about API-FOOTBALL and how to use all endpoints like Timezone, Seasons, Countries, Leagues, Teams, Standings, Fixtures, Events..
+Image
+KamikazeCombat — 12/11/2021
+import requests 
+import secrets
+import sqlite3
+import os
+import json
+import time 
+Expand
+message.txt
+4 KB
+lexifogel — 12/11/2021
+import matplotlib.pyplot as plt
+import sqlite3
+import os
+import json
+
+Expand
+Soccer-ReadData.py
+3 KB
+"2ef16e9246msha6237e4233efa3bp10476fjsndfae9ee072e8"
+lexifogel — 12/11/2021
+{
+    "Basketball": {
+        "Knicks": 215.42073170731706,
+        "Lakers": 221.47560975609755
+    },
+    "Baseball": {
+Expand
+data.json
+6 KB
+import requests
+import sqlite3
+import os
+import json
+import time
+from bs4 import BeautifulSoup
+Expand
+Soccer-GetData.py
+4 KB
+KamikazeCombat — 12/11/2021
+'x-rapidapi-key':  "1171c32ff6f6859a7044ec64ce2d1de3",
+    'x-rapidapi-host': "api-football-v1.p.rapidapi.com"
+lexifogel — 12/11/2021
+8114ecb3edb6df0bbc97898186ac4bc0
+KamikazeCombat — 12/11/2021
+import requests
+
+url = "https://api-football-v1.p.rapidapi.com/v3/players"
+
+querystring = {"league":"39","season":"2020"}
+
+headers = {
+    'x-rapidapi-host': "api-football-v1.p.rapidapi.com",
+    'x-rapidapi-key': "5eca74bf8bmsh6463613242d8822p10f390jsn03d55af04856"
+    }
+
+response = requests.request("GET", url, headers=headers, params=querystring)
+
+print(response.text)
+KamikazeCombat — 12/11/2021
+import requests
+
+url = "https://api-nba-v1.p.rapidapi.com/players/league/%7Bleague%7D"
+
+headers = {
+    'x-rapidapi-host': "api-nba-v1.p.rapidapi.com",
+    'x-rapidapi-key': "5eca74bf8bmsh6463613242d8822p10f390jsn03d55af04856"
+    }
+
+response = requests.request("GET", url, headers=headers)
+
+print(response.text)
+KamikazeCombat — 12/11/2021
+https://rapidapi.com/blog/nba-api-python/
+The Last Call - RapidAPI Blog
+NBA API Python: Track Your Favorite NBA Team | RapidAPI
+If you are a die-hard NBA fan then how about taking a closer look at your favorite team’s performance With the NBA API hosted on RapidAPI, you can do that and more
+
+'x-rapidapi-host': "api-nba-v1.p.rapidapi.com",
+    'x-rapidapi-key': "5eca74bf8bmsh6463613242d8822p10f390jsn03d55af04856"
+import requests
+
+url = "https://api-nba-v1.p.rapidapi.com/standings/standard/2020"
+
+headers = {
+    'x-rapidapi-host': "api-nba-v1.p.rapidapi.com",
+    'x-rapidapi-key': "5eca74bf8bmsh6463613242d8822p10f390jsn03d55af04856"
+    }
+
+response = requests.request("GET", url, headers=headers)
+
+print(response.text)
+KamikazeCombat — 12/12/2021
+import requests
+import sqlite3
+import os
+import json
+import time
+import pprint
+Expand
+NBA_get.py
+3 KB
+import requests 
+import secrets
+import sqlite3
+import os
+import json
+import time 
+Expand
+soccer_get.py
+4 KB
+KamikazeCombat — 12/12/2021
+import requests
+import sqlite3
+import os
+import json
+import time
+import pprint
+Expand
+NBA_get.py
+3 KB
+import matplotlib.pyplot as plt
+import sqlite3
+import os
+import json
+
+Expand
+NBA_read.py
+3 KB
+import matplotlib.pyplot as plt
+import sqlite3
+import os
+import json
+
+Expand
+soccer_read.py
+3 KB
+import requests 
+import secrets
+import sqlite3
+import os
+import json
+import time 
+Expand
+soccer_get.py
+4 KB
+KamikazeCombat — 12/12/2021
+{
+    "Soccer": {
+        "Attacker": 178.76470588235293,
+        "Midfielder": 178.88888888888889,
+        "Defender": 183.58536585365854,
+        "Goalkeeper": 192.66666666666666
+Expand
+data.json
+1 KB
+lexifogel — 12/12/2021
+#     path = os.path.dirname(os.path.abspath(file))
+#     conn = sqlite3.connect(path+'/'+filename)
+#     cur = conn.cursor()
+
+#     cur.execute('''SELECT Soccer.height 
+#     FROM Soccer 
+#     JOIN NBA
+#     ON Soccer.##
+#     ''')
+lexifogel — 12/12/2021
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+labels = ['G1', 'G2', 'G3', 'G4', 'G5']
+men_means = [20, 34, 30, 35, 27]
+women_means = [25, 32, 34, 20, 25]
+
+x = np.arange(len(labels))  # the label locations
+width = 0.35  # the width of the bars
+
+fig, ax = plt.subplots()
+rects1 = ax.bar(x - width/2, men_means, width, label='Men')
+rects2 = ax.bar(x + width/2, women_means, width, label='Women')
+
+# Add some text for labels, title and custom x-axis tick labels, etc.
+ax.set_ylabel('Scores')
+ax.set_title('Scores by group and gender')
+ax.set_xticks(x, labels)
+ax.legend()
+
+ax.bar_label(rects1, padding=3)
+ax.bar_label(rects2, padding=3)
+
+fig.tight_layout()
+
+plt.show()
+plt.bar(positions, num_players, align='center', alpha=0.5, color=['#187bcd', '#2a9df4', '#03254c', '#1167b1'], edgecolor='black')
+plt.bar(positions, num_players, align='center', alpha=0.5, color=['#187bcd', '#2a9df4', '#03254c', '#1167b1'], edgecolor='black')
+    plt.ylabel('Number of Players')
+    plt.xlabel('Positions')
+    plt.title('Positions for Soccer in Premier League')
+
+    plt.show()
+KamikazeCombat — 12/12/2021
+# soccer api keys
+SOCCER_KEY = "2ef16e9246msha6237e4233efa3bp10476fjsndfae9ee072e8"
+
+# NBA api keys
+NBA_KEY = "5eca74bf8bmsh6463613242d8822p10f390jsn03d55af04856"
+Expand
+secrets.py
+1 KB
+import matplotlib.pyplot as plt
+import sqlite3
+import os
+import json
+
+Expand
+soccer_read.py
+3 KB
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import numpy as np
+import sqlite3
+import os
+import json
+Expand
+NBA_read.py
+4 KB
+import requests
+import sqlite3
+import os
+import json
+import time
+import pprint
+Expand
+NBA_get.py
+4 KB
+{
+    "Soccer": {
+        "Attacker": 70.35433070866142,
+        "Midfielder": 70.77240344956878,
+        "Defender": 72.59147753589625,
+        "Goalkeeper": 74.70472440944881
+Expand
+data.json
+1 KB
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import numpy as np
+import sqlite3
+import os
+import json
+Expand
+Combined.py
+3 KB
+import requests 
+import secrets
+import sqlite3
+import os
+import json
+import time 
+Expand
+soccer_get.py
+4 KB
+lexifogel — 12/13/2021
+data['Soccer_2'] = {'Attacker': len(attacker), 'Midfielder': len(mid), 'Defender': len(defender), 'Goalie': len(goalkeeper)}
+def showViz2(filename):
+    '''
+    Create 2nd visual
+    Bar chart of numbers of players in each position
+    Input is json file with the data
+    Output is the visual
+    '''
+    full_path = os.path.join(os.path.dirname(file), filename)
+    with open(full_path, 'r') as jsonFile:
+        data = json.load(jsonFile)
+
+    num_players = data['Soccer_2'].values()
+    positions = data['Soccer_2'].keys()
+
+    plt.bar(positions, num_players, align='center', alpha=0.5, color=['#187bcd', '#2a9df4', '#03254c', '#1167b1'], edgecolor='black')
+    plt.ylabel('Number of Players')
+    plt.xlabel('Positions')
+    plt.title('Positions for Soccer in Premier League')
+
+    plt.show()
+KamikazeCombat — 12/13/2021
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import numpy as np
+import sqlite3
+import os
+import json
+Expand
+NBA_read.py
+4 KB
+{
+    "NBA": {
+        "Avg Guard Height": 75.39473684210526,
+        "Avg Center Height": 83.5,
+        "Avg Forward Height": 81.06896551724138,
+        "Avg Mixed Height": 79.04
+Expand
+data.json
+1 KB
+import requests
+import sqlite3
+import os
+import json
+import time
+import pprint
+Expand
+NBA_get.py
+5 KB
+import matplotlib.pyplot as plt
+import sqlite3
+import os
+import json
+
+Expand
+soccer_read.py
+4 KB
+import requests 
+import secrets
+import sqlite3
+import os
+import json
+import time 
+Expand
+soccer_get.py
+4 KB
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import numpy as np
+import sqlite3
+import os
+import json
+Expand
+NBA_vs_PL.py
+3 KB
+lexifogel — 12/13/2021
+https://github.com/lexifogel/si206-final
+lexifogel — 12/13/2021
+Attachment file type: archive
+si206final.zip
+326.79 KB
+lexifogel — Today at 2:00 PM
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/LF.jpg"/>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/LF.jpg"/>
+    <title>About</title>
+lexifogel — Today at 2:19 PM
+<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0R150H2YV2%22%3E</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0R150H2YV2');
+</script>
+
+  </head>
+
+  <body class="background-color">
+    <div id="page-container">
+      <div id="content-wrap">
+
+    <header>
+
+        <nav id="frontpg-nav">
+          <a href = "index.html">Home</a>
+          <a href = "about.html">About</a>
+          <a href = "work.html">Work</a>
+          <a href = "contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <h1 class="funky">Hi, I'm Lexi!<span class="wave"> 👋</span></h1>
+
+            <h2>I am a current junior studying Data Science with a concentration in UX Design at the University of Michigan's School of Information. </h2>
+            <p>I am also minoring in Economics through the School of Literature, Science, and the Arts.</p>
+            <p>I enjoy practicing research, data analysis, and function-focused design to understand and improve user experiences.</p>
+        </div>
+
+        <!-- "analysis can be used to make informed decisions, bring people together, and advance society" -->
+
+
+
+    </main>
+
+    </div>
+
+    <footer id="footer">
+        <p>Lexi Fogel &copy; 2022</p>
+    </footer>
+
+
+   <script src="js/javascript.js"></script>
+  </div>
+  </body>
+
+  </html>
+KamikazeCombat — Today at 3:16 PM
+Image
+KamikazeCombat — Today at 9:12 PM
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+about.html
+3 KB
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+guests.html
+2 KB
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+index.html
+2 KB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+socialmedia.html
+1 KB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+videos.html
+1 KB
+https://www.instagram.com/the_commonphenomenon/?utm_medium=copy_link
+https://www.tiktok.com/@the_commonphenomenon?_d=secCgYIASAHKAESPgo8rAnYu6bmRzZltJQjhPO2ROBX89ZiLKoeGeHOWzslCszR%2BYX9p2ULYT78V6pmN6mx9HWb3caZw6%2BGvOh1GgA%3D&checksum=20a50e69f837cbef59462f4950f08461331e524f4ef32c3da7eec0c57357f503&enable_clips=1&language=en&sec_uid=MS4wLjABAAAAjKElMXilpLZi2uLfO5uWgc6fA9ERxb9pItlV9FP0pY2YdZE3gU4xit2N-ocKh2Ik&sec_user_id=MS4wLjABAAAAjKElMXilpLZi2uLfO5uWgc6fA9ERxb9pItlV9FP0pY2YdZE3gU4xit2N-ocKh2Ik&share_app_id=1233&share_author_id=6876877811269977093&share_link_id=CBF9ED57-FEE9-4E76-B013-F0BC5C29565D&tt_from=sms&u_code=deiajge5190c84&user_id=6876877811269977093&utm_campaign=client_share&utm_medium=ios&utm_source=sms&source=h5_m&_r=1
+TikTok
+The Common Phenomenon on TikTok
+@the_commonphenomenon 4 Followers, 0 Following, 0 Likes - Watch awesome short videos created by The Common Phenomenon
+Image
+https://www.youtube.com/channel/UC-FjLiRYBEIT6bBcis9o1Mw
+YouTube
+The Common Phenomenon
+This is going to be a show where in each video we talk about real perspectives and real life stories, in order to find the common phenomenon in a fascinating, relatable, and awakening population.
+Image
+lexifogel — Today at 10:21 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+socialmedia.html
+2 KB
+no ^
+lexifogel — Today at 10:31 PM
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+about.html
+4 KB
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+guests.html
+3 KB
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+index.html
+2 KB
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+socialmedia.html
+3 KB
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Expand
+videos.html
+2 KB
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <title>About</title>
+
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+<body>
+    
+    <header> 
+        <nav> 
+          <a href = "index.html">Home</a>
+          <a href = "about.html">About</a>
+          <a href = "guests.html">Featured Guests</a>
+          <a href = "videos.html">Videos</a>
+          <a href = "socialmedia.html">Social Media</a>
+        </nav>
+
+        <h1>About</h1>
+    </header>
+
+    <main> 
+        <p>My mission is to create a a community and organization that showcases the reality of the world we live in. 
+            I believe inorder to achieve this goal the first step is to begin educating not only others but myself as well. 
+            This podcast is going to be about displaying real perspectives and real life stories to find the common phenomenon in a fascinating, relatable and awakening population. 
+            My intention with this podcast is to embody a conversation that highlights the perspectives and experiences of the "ordinary", like the majority of "normal" people in our society. 
+            This format allows for various people to come on and to provide their perspectives on many different topics based on the experiences and environments that not only shaped their interpretations of topics but themselves.</p>
+
+            <img src = "images/personal1.jpeg" alt="Tyler hanging at the commons" width="200"/>
+            <img src = "images/personal2.jpeg" alt="Personal photo of tyler on a boat" width="200"/>
+            <img src = "images/personal3.jpeg" alt="Personal photo of tyler in grand rapids area" width="200"/>
+            <img src = "images/personal4.jpeg" alt="Second Personal photo of tyler in grand rapids area" width="200"/>
+            <img src = "images/personal5.jpeg" alt="Personal photo of tyler in traverse city area" width="200"/>
+            <img src = "images/personal6.jpeg" alt="Tyler at the Marvel Muesem" width="200"/>
+            <img src = "images/personal7.jpeg" alt="Tyler and his girlfriend Ella" width="200"/>
+            <img src = "images/personal8.jpeg" alt="Personal photo of Tyler standing on a street" width="200"/>
+            <img src = "images/pod10.jpeg" alt="Tyler and guest sitting on the podcast" width="200"/>
+
+    </main>
+    <footer> 
+        <p>The Common Phenomenon &copy; 2022</p>
+    </footer> 
+    
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d80b59f29922cd1',m:'nemDKKuvukuJKdBA1n3cTRdI6eIWhKKbmvmQHkCYVDU-1643944263-0-AeqTEBM+fC9r/IVWPnB+FtvvOlZYhPbU3VVsNjyhMtgm2K4jz7FkZHVuE+YJ0VIZDxfRBTfY9O7zhVxpgWdd+7fwRQS4rWGQoL5SIa0/wLT29CWweJGDBBf43EmbP2LXN6kc5gVvLdsWrNAGmKSQfdtQHSAIivmlhNvdTTtKayuf4bZlX9zuUJPxCN9BT77MFA==',s:[0x09edc6cbad,0xeaf51ef153],}})();</script>
+    </body>
+</html>
