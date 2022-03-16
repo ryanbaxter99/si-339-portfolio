@@ -28,9 +28,6 @@
     </header>
 
     <main>
-
-        <div id="#content-social-media">
-
         <ul>
             <li>
                 <a href = "https://www.youtube.com/channel/UC-FjLiRYBEIT6bBcis9o1Mw" target="_blank">YouTube</a>
@@ -43,7 +40,27 @@
             </li>
         </ul>
 
-    </div>
+        <h2>Test Form</h2>
+        <form action="https://formspree.io/f/mknyzzgp" method="POST">
+            <fieldset>  
+                <legend>Contact Info:</legend>  
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" id="name" name="name" class="personal-info" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" name="email" class="personal-info" required>
+                <br>
+                <label for="message">Message</label>
+                <textarea placeholder="Message" id="message" name="msg" required></textarea>
+                <br>
+                <label for="submit">Submit</label>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+
+        
+
 
     </main>
 
