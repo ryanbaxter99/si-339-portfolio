@@ -3,7 +3,7 @@ p, h1, h2,h3, h4, li, img, div {
     padding-top: 20px;
 }
 
-nav ul { 
+.nav-container { 
     text-align: center;
     background-color: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);;
     text-decoration: none;
@@ -11,25 +11,25 @@ nav ul {
     padding: 0;
     font-family: 'Raleway';
     font-weight: bolder;
-}
-
-nav li { 
     display: inline-block; 
     padding: 30px;
     color: black;
     text-decoration: none;
  }
 
- nav li a { 
+ .nav-container a { 
      text-decoration: none;
      color: white;
      text-transform: uppercase;
  }
 
+ /* Will create a border around the active page */
 .active{
     font-weight: bold;
     border: 2px outset; 
 }
+
+/* The color of the nav link that you're hovering over */
 nav a:hover{
     font-weight: revert; 
     color: blue;
@@ -109,21 +109,8 @@ label{
     opacity: 0.8
 }
 
-@media (max-width:767px) {
-    .footer-dark .item:not(.social) {
-        text-align: center;
-        padding-bottom: 20px
-    }
-}
-
 .footer-dark .item.text {
     margin-bottom: 36px
-}
-
-@media (max-width:767px) {
-    .footer-dark .item.text {
-        margin-bottom: 0
-    }
 }
 
 .footer-dark .item.text p {
@@ -133,13 +120,6 @@ label{
 
 .footer-dark .item.social {
     text-align: center
-}
-
-@media (max-width:991px) {
-    .footer-dark .item.social {
-        text-align: center;
-        margin-top: 20px
-    }
 }
 
 .footer-dark .item.social>a {
@@ -163,13 +143,66 @@ label{
 .footer-dark .copyright {
     text-align: center;
     padding-top: 24px;
-    opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0
 }
 
+@media (min-width:767px) {
 
-.mission-statement{
-    padding: 30px 60px;
+    .nav-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+        grid-template-rows: 0.25fr;
+        gap: 1px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "Home Guests Logo Videos Contact";
+        justify-content: center;
+        align-content: center;
+        }
+
+    .Home { 
+        grid-area: Home; 
+    }
+
+    .Guests { 
+        grid-area: Guests; 
+    }
+
+    .Logo { 
+        grid-area: Logo; 
+    }
+
+    .Videos { 
+        grid-area: Videos; 
+    }
+
+    .Contact { 
+        grid-area: Contact; 
+    }
+      
+    
+
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-dark .item.text {
+        margin-bottom: 0;
+    }
+
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px
+    }
+
+    .footer-dark .item.text {
+        margin-bottom: 0
+    }
 }
-
+@media (min-width:991px) {
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px
+    }
+}
