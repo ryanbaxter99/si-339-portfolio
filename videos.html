@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
     <script src="https://kit.fontawesome.com/1136221654.js" crossorigin="anonymous"></script>
@@ -14,121 +15,177 @@
 
 <body>
 
-    <header> 
-        <a class = "skip" href="index.html">Skip to Main Content</a>
-        <nav class="nav-container">
-            <div class="Home">
-                <a href = "index.html">Home</a>
-            </div>
-            
-            <div class="Guests">
-                <a href = "guests.html">Featured Guests</a>
+    <header>  
+
+        <a class = "skip" href="#main3">Skip to Main Content</a>
+
+        <nav>
+
+            <div class="nav-container">
+                <div class="Home">
+                    <a href = "index.html">Home</a>
+                </div>
+                
+                <div class="Guests">
+                    <a href = "guests.html">Featured Guests</a>
+                </div>
+    
+                <div class="Videos">
+                    <a href = "videos.html">Videos</a>
+                </div>
+    
+                <div class="Contact">
+                    <a class="active" href = "socialmedia.html">Social Media</a>
+                </div>
+
+                <div class="Logo">
+                    <img src = "images/no-back-logo.png" alt="The Common Phenomenon Podcast logo" class="logo" width="200">
+                </div>
+                
             </div>
 
-            <div class="Logo">
-                <img src = "images/no-back-logo.png" alt="The Common Phenomenon Podcast logo" class="logo" width="200">
-            </div>
 
-            <div class="Videos">
-                <a class="active" href = "videos.html">Videos</a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ≡
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="index.html">Home</a>
+                <a class="dropdown-item" href="guests.html">Featured Guests</a>
+                <a class="dropdown-item active" href="videos.html">Videos</a>
+                <a class="dropdown-item" href="socialmedia.html">Social Media</a>
             </div>
-
-            <div class="Contact">
-                <a  href = "socialmedia.html">Social Media</a>
-            </div>
+        </div>
+              
         </nav>
-        <h1 id="main">Videos</h1>
+
+        <div class="mobile-logo">
+            <img src = "images/no-back-logo.png" alt="The Common Phenomenon Podcast logo" class="logo" width="200">
+        </div>
+          
+
     </header>
 
+
     <main>
-            <!-- video link -->
-        <h2>Episode 1: Logan Stuckhardt</h2>
-        
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/Y3C-OAH8tEg" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       
-        <p>Guest opens up about his shocking past, dissects childhood trauma, touches on addiction, reveals loosing his best friend, 
-            discusses mental health and battling issues such as suicide and uncovers the perspectives discovered throughout his journey. </p>
-       
-            <!-- video link -->
-        <h2>Episode 2: Sonny Vitello</h2>
 
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/xOwpYa1GD_w" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1 id="main3">Videos</h1>
 
-        <p>Guest uncovers his perspective while engaging in a conversation that highlights his identity, speaks upon such topics as finding confidence from within, 
-            touches upon his identity with being gay, highlights his perception of culture and being part of the black community, while effortlessly speaking on how 
-            the different parts of his identity all intersect and play a role together in how he goes about life.</p>
-        
-            <!-- video link -->
-        <h2>Episode 3: Noah Johnson</h2>
+        <div class="video">
+            <div class="vid-title">
+                <h3>Episode 001</h3>
+                <h2>Logan Stuckhardt</h2>
+            </div>
+                <iframe src="https://www.youtube.com/embed/Y3C-OAH8tEg" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-desc">
+                <p>Guest opens up about his shocking past, dissects childhood trauma, touches on addiction, reveals loosing his best friend, 
+                    discusses mental health and battling issues such as suicide and uncovers the perspectives discovered throughout his journey. </p>
+            </div>
+        </div>
 
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video">
+            <div class="vid-title">
+                <h3>Episode 002</h3>
+                <h2>Sonny Vitello</h2>
+            </div>
+                <iframe src="https://www.youtube.com/embed/xOwpYa1GD_w" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-desc">
+                <p>Guest uncovers his perspective while engaging in a conversation that highlights his identity, speaks upon such topics as finding confidence from within, 
+                    touches upon his identity with being gay, highlights his perception of culture and being part of the black community, while effortlessly speaking on how 
+                    the different parts of his identity all intersect and play a role together in how he goes about life.</p>
+            </div>
+        </div>
 
-        <p>In this episode of the Common Phenomenon I interview the infamous Noah Johnson. We dive in deep to the life of Noah and his journey to become
-            the young film artist he is today. We also talk about his passion for horror novels and his passion to become a book writer as well.</p>
-       
-            <!-- video link -->
-        <h2>Episode 4: Ella Wright</h2>
+        <div class="video">
+            <div class="vid-title">
+                <h3>Episode 003</h3>
+                <h2>Noah Johnson</h2>
+            </div>
+                <iframe src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-desc">
+                <p>In this episode of the Common Phenomenon I interview the infamous Noah Johnson. We dive in deep to the life of Noah and his journey to become
+                    the young film artist he is today. We also talk about his passion for horror novels and his passion to become a book writer as well.</p>
+            </div>
+        </div>
 
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video">
+            <div class="vid-title">
+                <h3>Episode 004</h3>
+                <h2>Ella Wright</h2>
+            </div>
+                <iframe src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-desc">
+                <p>In this epidode of the Common Phenomenon we get to Ella Wright and discuss her life story to the world. We discuss what helped her decide what made her want
+                    to persue a career in elementary teaching and wanting to play a role in helping shape the next generation of kids in the United States.</p>
+            </div>
+        </div>
 
-        <p>In this epidode of the Common Phenomenon we get to Ella Wright and discuss her life story to the world. We discuss what helped her decide what made her want
-            to persue a career in elementary teaching and wanting to play a role in helping shape the next generation of kids in the United States.</p>
-        
-            <!-- video link -->
-        <h2>Episode 5: Payton Beauchamp</h2>
+        <div class="video">
+            <div class="vid-title">
+                <h3>Episode 005</h3>
+                <h2>Payton Beauchamp</h2>
+            </div>
+                <iframe src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-desc">
+                <p>In this episode of the Common Phenomenon we get to meet Payton Beauchamp and discuss his life story to the world. We talk about his journey
+                    starting from Cheboygan Michigan making 10 dollars an hour to now making thousands of dollars a week in the crypto currency world and home realistate.</p>
+            </div>
+        </div>
 
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video">
+            <div class="vid-title">
+                <h3>Episode 006</h3>
+                <h2>Drew More</h2>
+            </div>
+                <iframe src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-desc">
+                <p>In this episode of the Common Phenomenon we get the opportunity to meet Drew More. We discuss a range of topics from the crypto world, life at Grand Valley University,
+                    to what it was like living in ghetto in modern day America.</p>
+            </div>
+        </div>
 
-        <p>In this episode of the Common Phenomenon we get to meet Payton Beauchamp and discuss his life story to the world. We talk about his journey
-            starting from Cheboygan Michigan making 10 dollars an hour to now making thousands of dollars a week in the crypto currency world and home realistate.</p>
 
-            <!-- video link -->
-        <h2>Episode 7: Drew More</h2>
-
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <p>In this episode of the Common Phenomenon we get the opportunity to meet Drew More. We discuss a range of topics from the crypto world, life at Grand Valley University,
-            to what it was like living in ghetto in modern day America.</p>
-
-            <!-- video link -->
-        <h2>Episode 8: Zach Hopkins</h2>
-
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <p>In this episode of the Common Phenomenon we get to meet Zach Hopkins. We talk about his life at Western Michigan University and his life story to making hardly enough to survive, to 
-            making tens of thousands a year on the booming onlyfans platform.</p>
+        <div class="video">
+            <div class="vid-title">
+                <h3>Episode 008</h3>
+                <h2>Zach Hopkins</h2>
+            </div>
+                <iframe src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-desc">
+                <p>In this episode of the Common Phenomenon we get to meet Zach Hopkins. We talk about his life at Western Michigan University and his life story to making hardly enough to survive, to 
+                    making tens of thousands a year on the booming onlyfans platform.</p>
+            </div>
+        </div>
            
-            <!-- video link -->
-        <h2>Episode 9: Logan Stuckhardt</h2>
 
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <p>In this episode of the Common Phenomenon we get another opportunity to talk to Logan Stuckhardt. In this episode we talk about what special things Logan has been working on and dive in deeper
-            into his ongoing business ventures at Western Michgan University, while also discussing updates regarding his progress in the local MMA league.</p>
+        <div class="video">
+            <div class="vid-title">
+                <h3>Episode 009</h3>
+                <h2>Logan Stuckhardt</h2>
+            </div>
+                <iframe src="https://www.youtube.com/embed/EtjQVqXUPHo?mute=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-desc">
+                <p>In this episode of the Common Phenomenon we get another opportunity to talk to Logan Stuckhardt. In this episode we talk about what special things Logan has been working on and dive in deeper
+                    into his ongoing business ventures at Western Michgan University, while also discussing updates regarding his progress in the local MMA league.</p>
+            </div>
+        </div>
+    
     </main>
 
     <footer> 
@@ -151,7 +208,10 @@
           
     </footer>   
     
-<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d80b5fb1a792cd1',m:'1tiUSs3aJesJLKoyrnZL9oZGcSQC5ZiE3a.AMxZerKo-1643944278-0-ASBb+c3oQcyVpYkOJFFU13EutTsC+NAb6AhJf8qdVODi8PgA/J2Kd47nqjWHm+nh+xY2HDYmFVBT3/o1kRp1gf0fHuRilLGXaBVg4IWP4biD57tFpKU8QxQMJ+5K53ovGwxWxvBYdBnu8QCO0PjK0sSJFuVPvIqjXKp9cCc5hlTodkYpvePGqukS1bJeQOHKyw==',s:[0x45fe1d491b,0xc6450f5732],}})();</script>
+    <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d80b5fb1a792cd1',m:'1tiUSs3aJesJLKoyrnZL9oZGcSQC5ZiE3a.AMxZerKo-1643944278-0-ASBb+c3oQcyVpYkOJFFU13EutTsC+NAb6AhJf8qdVODi8PgA/J2Kd47nqjWHm+nh+xY2HDYmFVBT3/o1kRp1gf0fHuRilLGXaBVg4IWP4biD57tFpKU8QxQMJ+5K53ovGwxWxvBYdBnu8QCO0PjK0sSJFuVPvIqjXKp9cCc5hlTodkYpvePGqukS1bJeQOHKyw==',s:[0x45fe1d491b,0xc6450f5732],}})();</script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,25 +1,32 @@
-p, h1, h2, h3, h4, li, img, div {
+li, img, div {
     margin: 20px 20px 20px 20px;
     padding-top: 20px;
 }
 
 body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    font-family: "Montserrat", "Trebuchet MS", Helvetica;
+    margin: 2em;
 }
 
 h1 { 
-    font-family: "Montserrat", "Trebuchet MS", Helvetica;
     font-size: 35px; 
     line-height: 1.1px;
     font-weight: bold;
     text-align:center;
     text-transform: uppercase;
     color: #c8b60d;
+    margin: 1em;
 }
 
 h2 { 
-    font-family: "Montserrat";
-    font-size: 20px; 
+    font-size: 2em; 
+    font-style: bold;
+    text-transform: uppercase;
+    color: #c8b60d;
+}
+h3 {
+    font-size: 1em; 
     font-style: bold;
     text-transform: uppercase;
     color: #c8b60d;
@@ -27,6 +34,8 @@ h2 {
 
 p{
     color: #c8b60d;
+    margin-bottom: 2em;
+    margin-top: 1em;
 }
 
 label{
@@ -49,6 +58,54 @@ a.skip-to-content:focus {
     top: 0px;
     visibility: visible;
 }
+
+.nav-container {
+    display: none;
+}
+
+.dropdown {
+
+}
+
+.mobile-logo {
+  text-align: center;
+}
+
+.skip{
+    background: white;
+    color: #c8b60d;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+  }
+
+  .skip:focus{
+    top: 0px;
+  }
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vid-title {
+    text-align: center;
+}
+
+.vid-desc {
+    text-align: center;
+}
+
+
+/* may delete vv */
+.video iframe {
+    width: 75%;
+}
+/* xx */
+
 
 /* style the footer and the footer links */
 .footer-dark {
@@ -140,6 +197,14 @@ a.skip-to-content:focus {
     
     }
 
+    .dropdown {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
     .active{
         font-weight: bold;
         border: 3px outset; 
@@ -187,41 +252,7 @@ a.skip-to-content:focus {
     }
 
     /* About page welcome images and statement */
-    .welcome-container {  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "picture-1 picture-2 welcome-text welcome-text welcome-text"
-            "picture-3 picture-4 welcome-text welcome-text welcome-text"
-            '. . . . .';
-        }
-        
-    .welcome-picture-1 { 
-        grid-area: picture-1;
-        margin: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
     
-    .welcome-picture-2 { 
-        grid-area: picture-2; 
-    }
-    
-    .welcome-picture-3 { 
-        grid-area: picture-3; 
-    }
-    
-    .welcome-picture-4 { 
-        grid-area: picture-4; 
-    }
-
-    
-    .welcome-text { 
-        grid-area: welcome-text; 
-    }
     
     .footer-dark .item:not(.social) {
         text-align: center;
@@ -244,6 +275,10 @@ a.skip-to-content:focus {
 
 /* DESKTOP view */
 @media screen and (min-width: 1000px) {
+
+    .mobile-logo {
+        display: none;
+    }
 
 }
 
