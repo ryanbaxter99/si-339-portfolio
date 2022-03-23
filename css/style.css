@@ -1,62 +1,10 @@
-p, h1, h2,h3, h4, li, img, div {
+p, h1, h2, h3, h4, li, img, div {
     margin: 20px 20px 20px 20px;
     padding-top: 20px;
 }
 
-.nav-container { 
-    text-align: center;
-    background-color: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway';
-    font-weight: bolder;
-    display: inline-block; 
-    padding: 30px;
-    color: black;
-    text-decoration: none;
- }
-
- .nav-container a { 
-     text-decoration: none;
-     color: white;
-     text-transform: uppercase;
- }
-
- /* Will create a border around the active page */
-.active{
-    font-weight: bold;
-    border: 2px outset; 
-}
-
-/* The color of the nav link that you're hovering over */
-nav a:hover{
-    font-weight: revert; 
-    color: blue;
-}
-
-a.current {
-    text-transform: capitalize;
-}
-
-a.skip-to-content {
-    left: 0;
-    padding: 6px;
-    transition: top 1s ease-out;
-    z-index: 1;
-    position: absolute;
-    top: -40px;
-}
-
-a.skip-to-content:focus {
-    position: static;
-    top: 0px;
-    visibility: visible;
-}
-
 body {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    
 }
 
 h1 { 
@@ -83,6 +31,23 @@ p{
 
 label{
     color: #c8b60d;
+}
+
+
+/* skip to main content requirment */
+a.skip-to-content {
+    left: 0;
+    padding: 6px;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+
+a.skip-to-content:focus {
+    position: static;
+    top: 0px;
+    visibility: visible;
 }
 
 /* style the footer and the footer links */
@@ -147,41 +112,117 @@ label{
     margin-bottom: 0
 }
 
-@media (min-width:767px) {
+/* mobile view edits */
 
-    .nav-container {  
+
+/* Tablet View */
+@media (min-width: 760px) {
+    
+    /* Nav bar on every page */
+    .nav-container {
+        text-align: center; 
+        font-family: 'Raleway';
+        font-weight: bolder;
+        text-decoration: none;
+        padding: 30px; 
         display: grid;
         grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
         grid-template-rows: 0.25fr;
         gap: 1px 0px;
         grid-auto-flow: row;
         grid-template-areas: "Home Guests Logo Videos Contact";
-        justify-content: center;
-        align-content: center;
-        }
+    }
+
+    .nav-container a { 
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    
+    }
+
+    .active{
+        font-weight: bold;
+        border: 3px outset; 
+    }
+
+    nav a:hover{
+        font-weight: revert; 
+        color: gold;
+    }
 
     .Home { 
         grid-area: Home; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
 
     .Guests { 
         grid-area: Guests; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .Logo { 
         grid-area: Logo; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .Videos { 
         grid-area: Videos; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .Contact { 
         grid-area: Contact; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-      
-    
 
+    /* About page welcome images and statement */
+    .welcome-container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "picture-1 picture-2 welcome-text welcome-text welcome-text"
+            "picture-3 picture-4 welcome-text welcome-text welcome-text"
+            '. . . . .';
+        }
+        
+    .welcome-picture-1 { 
+        grid-area: picture-1;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .welcome-picture-2 { 
+        grid-area: picture-2; 
+    }
+    
+    .welcome-picture-3 { 
+        grid-area: picture-3; 
+    }
+    
+    .welcome-picture-4 { 
+        grid-area: picture-4; 
+    }
+
+    
+    .welcome-text { 
+        grid-area: welcome-text; 
+    }
+    
     .footer-dark .item:not(.social) {
         text-align: center;
         padding-bottom: 20px;
@@ -200,9 +241,9 @@ label{
         margin-bottom: 0
     }
 }
-@media (min-width:991px) {
-    .footer-dark .item.social {
-        text-align: center;
-        margin-top: 20px
-    }
+
+/* DESKTOP view */
+@media screen and (min-width: 1000px) {
+
 }
+
